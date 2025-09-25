@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Banza- Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Daniel Banza</div>
+
+    <!-- Burger -->
+    <div class="burger" id="burger">
+      ☰
+    </div>
+
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="projet.html">Projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-img">
+        <img src="IMG-20250612-WA0086.jpg" alt="Photo de Nicol Rider">
+      </div>
+      <div class="hero-text">
+        <h1>Hello</h1>
+        <h2>À propos de moi</h2>
+        <p>
+          Je suis <strong>Daniel Banza</strong>, un développeur web passionnée doté d'une créativité débordante et d'un talent pour concrétiser des idées en expériences numériques interactives.
+        </p>
+        <div class="buttons">
+          <a href="#" class="btn btn-yellow">CV</a>
+          <a href="#" class="btn btn-orange">Projets</a>
+          <a href="#" class="btn btn-blue">Contact</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p><strong>Téléphone</strong><br>+243815935273</p>
+      <p><strong>Email</strong><br>danielbanza@anicns.gouv.cd</p>
+      <p><strong>Suivez-moi</strong><br>
+        <a href="#"><img src="icon-instagram.svg" alt="Instagram"></a>
+         <a href="#"><img src="WhatsApp Image 2025-09-15 à 19.05.35_173353e0.jpg" alt="linkedin"></a>
+        <a href="#"><img src="icon-twitter.svg" alt="Twitter"></a>
+      <p><strong>© 2025 by Daniel Banza</strong></p>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script pour activer le menu burger -->
+  <script>
+    const burger = document.getElementById('burger');
+    const nav = document.getElementById('nav-links');
+
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>

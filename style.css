@@ -1,0 +1,164 @@
+/* --- Style global --- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* --- Burger --- */
+.burger {
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* --- Section principale --- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5%;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-img img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+/* --- Boutons ronds --- */
+.btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-yellow {
+  background: #f2c94c;
+}
+
+.btn-orange {
+  background: #f2994a;
+}
+
+.btn-blue {
+  background: #56ccf2;
+}
+
+/* --- Pied de page --- */
+footer {
+  text-align: center;
+  padding: 2rem 5%;
+  background: #f9f9f9;
+  border-top: 1px solid #ccc;
+}
+
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  margin: 0 0.3rem;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 5%;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+}
